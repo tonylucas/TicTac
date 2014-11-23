@@ -1,0 +1,12 @@
+[31m>> [39mMocha exploded!
+[31m>> [39mReferenceError: document is not defined[31m
+>> [39m    at Object.<anonymous> (/Applications/MAMP/htdocs/memory/src/js/app.js:3:3)[31m
+>> [39m    at Module._compile (module.js:456:26)[31m
+>> [39m    at Object.Module._extensions..js (module.js:474:10)[31m
+>> [39m    at Module.load (module.js:356:32)[31m
+>> [39m    at Function.Module._load (module.js:312:12)[31m
+>> [39m    at Module.require (module.js:364:17)[31m
+>> [39m    at require (module.js:380:17)[31m
+>> [39m    at Object.<anonymous> (/Applications/MAMP/htdocs/memory/tests/tests.js:2:12)[31m
+>> [39m    at Module._compile (module.js:456:26)[31m
+>> [39m    at Object.Module._extensions..js (module.js:474:10)
