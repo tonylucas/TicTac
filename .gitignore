@@ -1,3 +1,4 @@
 bower_components/**
 
-\.sass-sache/**
+.sass-cache
+.sass-cache/*
