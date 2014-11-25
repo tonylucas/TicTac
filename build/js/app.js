@@ -347,7 +347,7 @@ angular.module('app', ['ngRoute', 'ngDialog'])
                     x: 100,
                     y: 100,
                     width: 2,
-                    height: 40, 
+                    height: 40,
                     offsetX: 1
                 });
                 that.hours.rotate(180)
@@ -364,7 +364,7 @@ angular.module('app', ['ngRoute', 'ngDialog'])
                     x: 100,
                     y: 100,
                     width: 2,
-                    height: 60, 
+                    height: 60,
                     offsetX: 1
                 });
                 that.minutes.rotate(180)

@@ -9,24 +9,29 @@
 }
 .home {
     color: #212121;
-    margin-top: 14%;
-    p{
+    margin-top: 14%; 
+    p {
         color: white;
     }
+    .menu {
+        img {
+            margin-bottom: 3px;
+        }
+    }
 }
-.options{
-    .clocks{
-        img{
+.options {
+    .clocks {
+        img {
             -webkit-filter: brightness(80%);
             transition: all .2s;
         }
-        img:hover{
+        img:hover {
             -webkit-filter: brightness(1);
             transition: all .2s;
         }
     }
 }
-h2{
+h2 {
     text-align: center;
 }
 a.home-btn {
@@ -57,7 +62,7 @@ input[type="number"] {
     border-radius: 10px;
     border: 6px solid rgb(228, 228, 228);
     position: relative;
-    img{
+    img {
         width: 49%;
         margin: auto;
     }

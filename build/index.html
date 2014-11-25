@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
+<!--    <base href="/tictac/src/">-->
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/app.css" />
-    <title>Memory</title>
+    <link rel="stylesheet" type="text/css" href="css/app.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <title>Apprendre à lire l'heure en CE2</title>
 </head>
 
-<body>
+<body ng-app="app">
 
-    <h1>Memory</h1>
-
-    <div class="memory"></div>
-
-    <div id="counter">Nombre de clicks : <span id="nb"></span>
+    <div class="container">
+        <ng-view></ng-view>
     </div>
 
 
-
-    <script src="js/main.js"></script>
-
+    
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

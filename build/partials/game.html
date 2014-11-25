@@ -1,0 +1,18 @@
+<div class="home" ng-controller="gameCtrl">
+    <a class="home-btn" href="#/">
+        <img class="img-responsive" src="img/retour.png" alt="">
+    </a>
+
+    <div class="row text-center">
+
+        <div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-4" ng-show="clock.minutes && clock.hours">
+            <div id="game"></div>
+            <p>{{clock.dayPart}}</p>
+            <input type="number" name="hour" min="0" max="23" ng-model="game.inputHour">h
+            <input type="number" name="minute" step="5" min="0" max="55" ng-model="game.inputMinute">
+            <a href="" ng-click="game.check()">
+                <img class="img-responsive" src="img/verify.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>

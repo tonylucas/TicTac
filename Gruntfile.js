@@ -10,18 +10,18 @@ module.exports = function (grunt) {
         cssmin: {
             combine: {
                 files: {
-                    'build/css/app.css': ['src/css/app.css']
+                    'build/css/app.min.css': ['bower_components/bootstrap/dist/css/bootstrap.min.css', 'bower_components/ngDialog/css/ngDialog.min.css', 'src/css/app.css']
                 }
             }
         },
 
         concat: {
             dist: {
-                src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/underscore/underscore-min.js', 'src/js/app.js'],
-                dest: 'build/js/main.js'
+                src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/underscore/underscore-min.js', 'bower_components/angularjs/angular.min.js', 'bower_components/angular-route/angular-route.min.js', 'bower_components/kineticjs/kinetic.min.js', 'bower_components/ngDialog/js/ngDialog.min.js', 'src/js/app.js'],
+                dest: 'build/js/app.min.js'
             }
         },
-
+        
         compass: {
             dev: {
                 options: {
@@ -30,17 +30,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-        //        express: {
-        //            all: {
-        //                options: {
-        //                    bases: ['.'],
-        //                    port: 9000,
-        //                    hostname: "localhost",
-        //                    livereload: true
-        //                }
-        //            }
-        //        },
 
         watch: {
             js: {
@@ -51,26 +40,7 @@ module.exports = function (grunt) {
                 files: ['src/css/*.css', 'src/sass/*.scss', '!src/css/min.*'],
                 tasks: ['compass', 'cssmin']
             },
-        },
-
-        //        open: {
-        //            all: {
-        //                path: 'http://localhost:9000/tictac/src/'
-        //            }
-        //        },
-
-        mochaTest: {
-            test: {
-                options: {
-                    reporter: 'spec',
-                    captureFile: 'results.txt', // Optionally capture the reporter output to a file
-                    quiet: false, // Optionally suppress output to standard out (defaults to false)
-                    clearRequireCache: false // Optionally clear the require cache before running tests (defaults to false)
-                },
-                src: ['tests/tests.js']
-            }
         }
-
 
     });
 
